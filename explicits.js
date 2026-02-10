@@ -42,53 +42,49 @@ define(['questAPI'], function(Quest){
         autoSubmit:false
     });
 	
-    API.addQuestionsSet('therm',{
-        inherit: 'basicSelect',
-        answers: [
-            {text:'10 - Extremely warm', value:10},
-            {text:'9 - Very warm', value:9},
-            {text:'8 - Moderately warm', value:8},
-            {text:'7 - Somewhat warm', value:7},
-            {text:'6 - Slightly warm', value:6},
-            {text:'5 - Neither warm nor cold', value:5},
-            {text:'4 - Slightly cold', value:4},
-            {text:'3 - Somewhat cold', value:3},
-            {text:'2 - Moderately cold', value:2},
-            {text:'1 - Very cold', value:1},
-            {text:'0 - Extremely cold', value:0}
-        ]
-    });
+	API.addQuestionsSet('attributes7', {
+    inherit : 'basicSelect',
+    name: 'attributes7',
+    stem: 'Which statement best describes your views on gender roles?',
+    answers: [
+        {text:'I strongly associate males with leadership and females with nurturing roles.', value:7},
+        {text:'I moderately associate males with leadership and females with nurturing roles.', value:6},
+        {text:'I slightly associate males with leadership and females with nurturing roles.', value:5},
+        {text:'I do not associate males or females with specific roles.', value:4},
+        {text:'I slightly associate females with leadership and males with nurturing roles.', value:3},
+        {text:'I moderately associate females with leadership and males with nurturing roles.', value:2},
+        {text:'I strongly associate females with leadership and males with nurturing roles.', value:1}
+    ]
+});
 
-	
-    /**
-	*Specific questions
-	*/	
-    API.addQuestionsSet('attributes7',{
-        inherit : 'basicSelect',
-        name: 'attributes7',
-        stem: 'Which statement best describes you?',
-        answers: [
-            {text:'I strongly prefer <%= global.whiteLabels %> to <%= global.blackLabels %>.',value:7},
-            {text:'I moderately prefer <%= global.whiteLabels %> to <%= global.blackLabels %>.',value:6},
-            {text:'I slightly prefer <%= global.whiteLabels %> to <%= global.blackLabels %>.',value:5},
-            {text:'I like <%= global.whiteLabels %> and <%= global.blackLabels %> equally.',value:4},
-            {text:'I slightly prefer <%= global.blackLabels %> to <%= global.whiteLabels %>.',value:3},
-            {text:'I moderately prefer <%= global.blackLabels %> to <%= global.whiteLabels %>.',value:2},
-            {text:'I strongly prefer <%= global.blackLabels %> to <%= global.whiteLabels %>.',value:1}
-        ]
-    });
-	
-    API.addQuestionsSet('thermBlack',{
-        inherit : 'therm',
-        name: 'Tblack_0to10',
-        stem: 'How warm or cold do you feel towards <b><%= global.blackLabels %></b>?'
-    });
+	API.addQuestionsSet('attributes8', {
+    inherit : 'basicSelect',
+    name: 'attributes8',
+    stem: 'Which statement best describes your views on gender and academic subjects?',
+    answers: [
+        {text:'I strongly associate males with Science and females with Humanities.', value:7},
+        {text:'I moderately associate males with Science and females with Humanities.', value:6},
+        {text:'I slightly associate males with Science and females with Humanities.', value:5},
+        {text:'I do not associate males or females with specific academic subjects.', value:4},
+        {text:'I slightly associate females with Science and males with Humanities.', value:3},
+        {text:'I moderately associate females with Science and males with Humanities.', value:2},
+        {text:'I strongly associate females with Science and males with Humanities.', value:1}
+    ]
+});
 
-    API.addQuestionsSet('thermWhite',{
-        inherit : 'therm',
-        name: 'Twhite_0to10',
-        stem: 'How warm or cold do you feel towards <b><%= global.whiteLabels %></b>?'
-    });
+API.addQuestionsSet('attributes9', {
+    inherit : 'basicSelect',
+    name: 'attributes9',
+    stem: 'Which statement best reflects your general views about gender and academic subjects?',
+    answers: [
+        {text:'I believe males are better suited for Science, and females are better suited for Humanities.', value:6},
+        {text:'I believe males are better suited for Science, but females can do Science as well.', value:5},
+        {text:'I believe males and females are equally suited for both Science and Humanities.', value:4},
+        {text:'I believe females are better suited for Humanities, but males can do Humanities as well.', value:3},
+        {text:'I believe females are better suited for Humanities, and males are better suited for Science.', value:2},
+        {text:'I believe both males and females can excel in any subject equally, regardless of the field.', value:1},
+    ]
+});
 
     API.addSequence([
         {
@@ -100,17 +96,17 @@ define(['questAPI'], function(Quest){
                     data : [
                         {
                             inherit:'basicPage', 
-                            questions: {inherit:'thermBlack'}
+                            questions: {inherit:'attributes7'}
                         },
                         {
                             inherit:'basicPage', 
-                            questions: {inherit:'thermWhite'}							
+                            questions: {inherit:'attributes8'}							
                         }
                     ]
                 },
                 {
                     inherit:'basicPage', 
-                    questions: {inherit:'attributes7'}
+                    questions: {inherit:'attributes9'}
                 }
             ]
         }
