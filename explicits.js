@@ -49,7 +49,7 @@ API.addQuestionsSet('facultyQuestion', {
     autoSubmit: false,
     stem: 'Which faculty are you associated with?',
     onSubmit: function(log, current) {
-		onsole.log('onSubmit fired, response:', log.response);
+		console.log('onSubmit fired, response:', log.response);
         window._selectedFaculty = log.response;
     },
         answers: [
@@ -85,7 +85,7 @@ function getDepartments() {
         faculty = parseInt(pagesData.faculty || (pagesData[0] && pagesData[0].faculty));
     }
 
-    console.log('Faculty value detected:',
+    console.log('Faculty value detected:', faculty);
 
 var departments = {
 
