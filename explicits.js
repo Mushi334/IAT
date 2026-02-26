@@ -49,6 +49,7 @@ API.addQuestionsSet('facultyQuestion', {
     autoSubmit: false,
     stem: 'Which faculty are you associated with?',
     onSubmit: function(log, current) {
+		onsole.log('onSubmit fired, response:', log.response);
         window._selectedFaculty = log.response;
     },
         answers: [
@@ -73,7 +74,18 @@ API.addQuestionsSet('facultyQuestion', {
      * (MUST be above department question)
      */
 function getDepartments() {
+    // Try window variable first (set by onSubmit)
     var faculty = parseInt(window._selectedFaculty);
+    
+    // Fallback: read from the global pagesData that minnoJS stores
+    if (!faculty) {
+        var global = API.getGlobal();
+        // minnoJS stores previous page answers here after submission
+        var pagesData = global.$pagesData || global.pagesData || {};
+        faculty = parseInt(pagesData.faculty || (pagesData[0] && pagesData[0].faculty));
+    }
+
+    console.log('Faculty value detected:',
 
 var departments = {
 
