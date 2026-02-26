@@ -322,7 +322,7 @@ API.addQuestionsSet('attributes9', {
         { inherit:'medicineDepartments' },
         { inherit:'pgMedicalDepartments' }
     ]
-}
+},
                         {
                             inherit:'basicPage', 
                             questions: {inherit:'attributes7'}
