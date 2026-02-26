@@ -71,7 +71,7 @@ define(['questAPI'], function(Quest){
      */
     function getDepartments() {
 
-        var faculty = API.getAnswers().faculty;
+        var faculty = API.getCurrent().responses.faculty;
 
 var departments = {
 
