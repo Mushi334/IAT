@@ -70,7 +70,8 @@ define(['questAPI'], function(Quest){
      * (MUST be above department question)
      */
 function getDepartments() {
-    var faculty = API.getCurrent().questions.faculty && API.getCurrent().questions.faculty.response;
+    var global = API.getGlobal();
+    var faculty = global.faculty && global.faculty.response;
 
 var departments = {
 
