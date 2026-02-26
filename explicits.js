@@ -71,7 +71,7 @@ define(['questAPI'], function(Quest){
      */
     function getDepartments() {
 
-        var faculty = API.getAnswers().faculty;
+        var faculty = API.getData().faculty;
 
 var departments = {
 
@@ -247,13 +247,6 @@ var departments = {
 });
 
     API.addSequence([
-        {
-            mixer : 'random', 
-            data : [
-                {
-                    mixer : 'random', 
-                    wrapper:true, 
-                    data : [
 {
     inherit:'basicPage',
     questions: [{ inherit:'facultyQuestion' }]
@@ -262,6 +255,14 @@ var departments = {
     inherit:'basicPage',
     questions: [{ inherit:'departmentQuestion' }]
 },
+        {
+            mixer : 'random', 
+            data : [
+                {
+                    mixer : 'random', 
+                    wrapper:true, 
+                    data : [
+
                         {
                             inherit:'basicPage', 
                             questions: {inherit:'attributes7'}
