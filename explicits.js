@@ -5,14 +5,14 @@ define(['questAPI'], function(Quest){
     API.addPagesSet('basicPage',{
         noSubmit:false,
         header: 'Questionnaire',
-        decline: true,
+        decline: false,
         declineText: isTouch ? 'Decline' : 'Decline to Answer', 
         autoFocus:true, 
-        progressBar:  'Page <%= pagesMeta.number %> out of 2'
+        progressBar:  'Page <%= pagesMeta.number %> out of 5'
     });
 	
     API.addQuestionsSet('basicQ',{
-        decline: 'true',
+        decline: 'false',
         required : true, 		
         errorMsg: {
             required: isTouch 
@@ -171,7 +171,7 @@ define(['questAPI'], function(Quest){
     API.addQuestionsSet('imageRating1', {
         inherit: 'basicSelect',
         name: 'imageRating1',
-        stem: '<img src="https://github.com/Mushi334/IAT/blob/main/images/female_lab.png?raw=true" style="max-width:100%; margin-bottom:15px;"><br>How typical does this image seem to you?',
+        stem: '<img src="https://github.com/Mushi334/IAT/blob/main/images/female_lab.png?raw=true" style="max-width:60%; margin-bottom:15px;"><br>How typical does this image seem to you?',
         answers: [
             { text: '1 - Not at all typical', value: 1 },
             { text: '2', value: 2 },
@@ -184,7 +184,7 @@ define(['questAPI'], function(Quest){
     API.addQuestionsSet('imageRating2', {
         inherit: 'basicSelect',
         name: 'imageRating2',
-        stem: '<img src="https://github.com/Mushi334/IAT/blob/main/images/male_lab.png?raw=true" style="max-width:100%; margin-bottom:15px;"><br>How typical does this image seem to you?',
+        stem: '<img src="https://github.com/Mushi334/IAT/blob/main/images/male_lab.png?raw=true" style="max-width:60%; margin-bottom:15px;"><br>How typical does this image seem to you?',
         answers: [
             { text: '1 - Not at all typical', value: 1 },
             { text: '2', value: 2 },
