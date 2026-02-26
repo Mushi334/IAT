@@ -167,7 +167,33 @@ define(['questAPI'], function(Quest){
         autoSubmit: false,
         stem: 'What is your university registration number?'
     });
+//Image questions
+    API.addQuestionsSet('imageRating1', {
+        inherit: 'basicSelect',
+        name: 'imageRating1',
+        stem: '<img src="https://github.com/Mushi334/IAT/blob/main/images/female_lab.png?raw=true" style="max-width:100%; margin-bottom:15px;"><br>How typical does this image seem to you?',
+        answers: [
+            { text: '1 - Not at all typical', value: 1 },
+            { text: '2', value: 2 },
+            { text: '3', value: 3 },
+            { text: '4', value: 4 },
+            { text: '5 - Very typical', value: 5 }
+        ]
+    });
 
+    API.addQuestionsSet('imageRating2', {
+        inherit: 'basicSelect',
+        name: 'imageRating2',
+        stem: '<img src="https://github.com/Mushi334/IAT/blob/main/images/male_lab.png?raw=true" style="max-width:100%; margin-bottom:15px;"><br>How typical does this image seem to you?',
+        answers: [
+            { text: '1 - Not at all typical', value: 1 },
+            { text: '2', value: 2 },
+            { text: '3', value: 3 },
+            { text: '4', value: 4 },
+            { text: '5 - Very typical', value: 5 }
+        ]
+    });
+	
     API.addQuestionsSet('attributes7', {
         inherit : 'basicSelect',
         name: 'attributes7',
@@ -220,6 +246,13 @@ define(['questAPI'], function(Quest){
                 { inherit: 'departmentQuestion' },
                 { inherit: 'genderQuestion' },
                 { inherit: 'registrationQuestion' }
+            ]
+        },
+		    {
+            inherit: 'basicPage',
+            questions: [
+                { inherit: 'imageRating1' },
+                { inherit: 'imageRating2' }
             ]
         },
         {
