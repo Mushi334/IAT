@@ -43,11 +43,14 @@ define(['questAPI'], function(Quest){
     });
      /** Faculty Question
      */
-    API.addQuestionsSet('facultyQuestion', {
-        inherit: 'basicDropdown',
-        name: 'faculty',
-        autoSubmit: false,
-        stem: 'Which faculty are you associated with?',
+API.addQuestionsSet('facultyQuestion', {
+    inherit: 'basicDropdown',
+    name: 'faculty',
+    autoSubmit: false,
+    stem: 'Which faculty are you associated with?',
+    onSubmit: function(log, current) {
+        window._selectedFaculty = log.response;
+    },
         answers: [
             { text: 'Faculty of Arts', value: 1 },
             { text: 'Faculty of Social Sciences', value: 2 },
@@ -70,8 +73,7 @@ define(['questAPI'], function(Quest){
      * (MUST be above department question)
      */
 function getDepartments() {
-    var current = API.getCurrent();
-    var faculty = current && current.questions && current.questions.faculty && current.questions.faculty.response;
+    var faculty = parseInt(window._selectedFaculty);
 
 var departments = {
 
@@ -202,7 +204,7 @@ var departments = {
 
 };
 
-		        return departments[parseInt(faculty)] || [];
+		        return departments[faculty] || [];
     }
 
     /**
@@ -247,13 +249,14 @@ var departments = {
 });
 
     API.addSequence([
-{
-    inherit:'basicPage',
-    questions: [
-        { inherit:'facultyQuestion' },
-        { inherit:'departmentQuestion' }
-    ]
-},
+    {
+        inherit: 'basicPage',
+        questions: [{ inherit: 'facultyQuestion' }]
+    },
+    {
+        inherit: 'basicPage',
+        questions: [{ inherit: 'departmentQuestion' }]
+    },
         {
             mixer : 'random', 
             data : [
