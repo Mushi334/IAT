@@ -69,9 +69,8 @@ define(['questAPI'], function(Quest){
      * Department Mapping Function
      * (MUST be above department question)
      */
-    function getDepartments() {
-
-        var faculty = API.getState().responses.faculty;
+function getDepartments() {
+    var faculty = API.getCurrent().questions.faculty && API.getCurrent().questions.faculty.response;
 
 var departments = {
 
