@@ -70,8 +70,8 @@ define(['questAPI'], function(Quest){
      * (MUST be above department question)
      */
 function getDepartments() {
-    var global = API.getGlobal();
-    var faculty = global.faculty && global.faculty.response;
+    var current = API.getCurrent();
+    var faculty = current && current.questions && current.questions.faculty && current.questions.faculty.response;
 
 var departments = {
 
@@ -202,7 +202,7 @@ var departments = {
 
 };
 
-		        return departments[faculty] || [];
+		        return departments[parseInt(faculty)] || [];
     }
 
     /**
@@ -249,11 +249,10 @@ var departments = {
     API.addSequence([
 {
     inherit:'basicPage',
-    questions: [{ inherit:'facultyQuestion' }]
-},
-{
-    inherit:'basicPage',
-    questions: [{ inherit:'departmentQuestion' }]
+    questions: [
+        { inherit:'facultyQuestion' },
+        { inherit:'departmentQuestion' }
+    ]
 },
         {
             mixer : 'random', 
