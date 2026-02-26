@@ -71,7 +71,7 @@ define(['questAPI'], function(Quest){
      */
     function getDepartments() {
 
-        var faculty = API.getCurrent().responses.faculty;
+        var faculty = API.getAnswers().faculty;
 
 var departments = {
 
@@ -254,13 +254,14 @@ var departments = {
                     mixer : 'random', 
                     wrapper:true, 
                     data : [
-                        {
-                            inherit:'basicPage',
-                            questions: [
-                                { inherit:'facultyQuestion' },
-                                { inherit:'departmentQuestion' }
-                            ]
-                        },
+{
+    inherit:'basicPage',
+    questions: [{ inherit:'facultyQuestion' }]
+},
+{
+    inherit:'basicPage',
+    questions: [{ inherit:'departmentQuestion' }]
+},
                         {
                             inherit:'basicPage', 
                             questions: {inherit:'attributes7'}
