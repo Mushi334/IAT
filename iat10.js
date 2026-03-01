@@ -148,7 +148,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
-			ITIDuration : 2000, //Duration between trials.
+			ITIDuration : 250, //Duration between trials.
 
 			fontColor : '#000000', //The default color used for printed messages.
 			
@@ -365,7 +365,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 		var leftInput = !isTouch ? {handle:'left',on:'keypressed',key:piCurrent.leftKey} : {handle:'left',on:'click', stimHandle:'left'};
 		var rightInput = !isTouch ? {handle:'right',on:'keypressed',key:piCurrent.rightKey} : {handle:'right',on:'click', stimHandle:'right'};
-		var proceedInput = {handle:'space', on:'timeout', duration:2000};
+		var proceedInput = {handle:'space', on:'timeout', duration:5000};
 
 		/**
 		*Set basic settings.
@@ -498,7 +498,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 							{type:'hideStim', handle:'All'},
 							{type:'removeInput', handle:'space'},
 							{type:'log'},
-							{type:'trigger', handle:'endTrial', duration:2000}
+							{type:'trigger', handle:'endTrial', duration:5000}
 						]
 					},
 					{
