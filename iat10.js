@@ -148,7 +148,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
-			ITIDuration : 250, //Duration between trials.
+			ITIDuration : 2000, //Duration between trials.
 
 			fontColor : '#000000', //The default color used for printed messages.
 			
