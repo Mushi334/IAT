@@ -1,4 +1,4 @@
-define(['pipAPI','https://cdn.jsdelivr.net/gh/Mushi334/IAT@030e9ddbf2f96b7c2bddd77f72f45f2c8d763b20/iat10.js'], function(APIConstructor, iatExtension){
+define(['pipAPI','https://cdn.jsdelivr.net/gh/Mushi334/IAT@4f908d5ef5ad9b7a2c47e97e588f9140ce7c98f6/iat10.js'], function(APIConstructor, iatExtension){
     let API = new APIConstructor();
     let global = API.getGlobal();
 
