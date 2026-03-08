@@ -19,8 +19,8 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {word: 'Asif'},
                 {word: 'Ibrahim'},
                 {word: 'Abdullah'},
-                {word: 'রায়হান'},
-                {word: 'অভিষেক'}
+                {word: 'Selim'},
+                {word: 'Arnob'}
             ],
             //Stimulus css (style)
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
@@ -41,8 +41,8 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {word: 'Anjila'},
                 {word: 'Ahona'},
                 {word: 'Meem'},
-                {word: 'চন্দ্রিকা'},
-                {word: 'ইসরাত'}
+                {word: 'Oishi'},
+                {word: 'Ramisa'}
             ],
             //Stimulus css (style)
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
@@ -62,9 +62,9 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {word: 'biology'},
                 {word: 'geology'},
                 {word: 'engineering'},
-                {word: 'medical'},
-                {word: 'রসায়ন'},
-                {word: 'গণিত'}
+                {word: 'statistics'},
+                {word: 'psychology'},
+                {word: 'computer science'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -85,8 +85,8 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {word: 'literature'},
                 {word: 'sociology'},
                 {word: 'religious studies'},
-                {word: 'ইতিহাস'},
-                {word: 'দর্শনশাস্ত্র'}
+                {word: 'journalism'},
+                {word: 'theatre'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
