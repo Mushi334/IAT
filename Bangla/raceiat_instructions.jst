@@ -1,57 +1,61 @@
 <%
-    var respInst = "you will use the 'E' and 'I' computer keys to";
-    if (global.$isTouch)  respInst = "you will";
+    var respInst = "আপনি কীবোর্ডে 'E' এবং 'I' ব্যবহার করে";
+    if (global.$isTouch) respInst = "আপনি";
 %>
 
 <div class="panel panel-info" style="margin-top:1em">
-		<div class="panel-heading">
-			<h1 class="panel-title" style="font-size:2em">
-				IAT Instructions
-			</h1>
-		</div>
+    <div class="panel-heading">
+        <h1 class="panel-title" style="font-size:2em">
+            IAT নির্দেশনা
+        </h1>
+    </div>
 </div>
 
 <div class="panel-body">
-	<p class="lead">Next, <%=respInst%> categorize items into groups as fast as you can. 
-	These are the four groups and the items that belong to each:</p>
+    <p class="lead">
+        এরপর, <%= respInst %> যত দ্রুত সম্ভব আইটেমগুলোকে সঠিক গ্রুপে সাজাতে হবে।
+        এখানে চারটি গ্রুপ রয়েছে এবং প্রতিটিতে যেসব আইটেম রয়েছে তা হলো:
+    </p>
 
-<table class="table table-bordered">
-    <tr class="active">
-        <th>Category</th>
-        <th>Items</th>
-    </tr>
-    <tr>
-        <th>Science Subjects</th>
-        <td>
-            chemistry, physics, mathematics, pharmacy, biology, geology, engineering, statistics, psychology, computer science
-        </td>
-    </tr>
-    <tr>
-        <th>Humanities Subjects</th>
-        <td>
-            history, philosophy, anthropology, fine arts, english, literature, sociology, religious studies, journalism, theatre
-        </td>
-    </tr>
-    <tr>
-        <th>Male</th>
-        <td>
-            Raihan, Ovishek, Samir, Turjo, Tushar, Asif, Ibrahim, Abdullah, Selim, Arnob
-        </td>
-    </tr>
-    <tr>
-        <th>Female</th>
-        <td>
-            Chandrika, Israt, Nafisa, Shoily, Sumaiya, Anjila, Ahona, Meem, Oishi, Ramisa
-        </td>
-    </tr>
-</table>
+    <table class="table table-bordered">
+        <tr class="active">
+            <th>বিভাগ</th>
+            <th>আইটেম</th>
+        </tr>
+        <tr>
+            <th>বিজ্ঞান বিভাগ</th>
+            <td>
+                রসায়ন, পদার্থবিজ্ঞান, গণিত, ফার্মেসি, জীববিজ্ঞান, ভূবিজ্ঞান, প্রকৌশল, পরিসংখ্যান, মনোবিজ্ঞান, কম্পিউটার বিজ্ঞান
+            </td>
+        </tr>
+        <tr>
+            <th>মানবিক বিভাগ</th>
+            <td>
+                ইতিহাস, দর্শনশাস্ত্র, নৃবিজ্ঞান, চারুকলা, ইংরেজি, সাহিত্য, সমাজবিজ্ঞান, ধর্মতত্ত্ব, সাংবাদিকতা, নাট্যকলা
+            </td>
+        </tr>
+        <tr>
+            <th>পুরুষ</th>
+            <td>
+                রায়হান, অভিষেক, সামির, তুর্জো, তুষার, আসিফ, ইব্রাহিম, আব্দুল্লাহ, সেলিম, অর্ণব
+            </td>
+        </tr>
+        <tr>
+            <th>মহিলা</th>
+            <td>
+                চন্দ্রিকা, ইসরাত, নাফিসা, শৈলী, সুমাইয়া, অঞ্জিলা, আহোনা, মীম, ঐশী, রামিসা
+            </td>
+        </tr>
+    </table>
 
-	<p class="lead">There are seven parts.  The instructions change for each part.  Pay attention!<p>
+    <p class="lead">
+        এখানে সর্বমোট সাতটি অংশ রয়েছে। প্রতিটি অংশের নির্দেশনা আলাদা।
+        মনোযোগ দিয়ে এগুলো সম্পন্ন করার অনুরোধ রইল!
+    </p>
 
-	<div class="text-center proceed" style="margin: 30px auto 10px;">
-		<button pi-message-done type="button" class="btn btn-primary">
-			Start
-		</button>
-	</div>
+    <div class="text-center proceed" style="margin: 30px auto 10px;">
+        <button pi-message-done type="button" class="btn btn-primary">
+            শুরু করুন
+        </button>
+    </div>
 </div>
-
