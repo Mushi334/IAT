@@ -38,7 +38,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/Mushi334/IAT@main/Bangla/iat10.js'
                 {word: 'শৈলী'},
                 {word: 'সুমাইয়া'},
                 {word: 'অঞ্জিলা'},
-                {word: 'আহোনা'},
+                {word: 'অহনা'},
                 {word: 'মীম'},
                 {word: 'ঐশী'},
                 {word: 'রামিসা'}
