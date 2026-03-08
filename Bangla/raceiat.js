@@ -1,95 +1,94 @@
-define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.js'], function(APIConstructor, iatExtension){
+define(['pipAPI','https://cdn.jsdelivr.net/gh/Mushi334/IAT@main/Bangla/iat10_bangla.js'], function(APIConstructor, iatExtension){
     let API = new APIConstructor();
     let global = API.getGlobal();
-
     return iatExtension({
         category1 : {
-            name : 'Male', //Will appear in the data.
+            name : 'পুরুষ', //Will appear in the data.
             title : {
-                media : {word : 'Male'}, //Name of the category presented in the task.
+                media : {word : 'পুরুষ'}, //Name of the category presented in the task.
                 css : {color:'#31940F','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'}, //Style of the category title.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'Raihan'},
-                {word: 'Ovishek'},
-                {word: 'Samir'},
-                {word: 'Turjo'},
-                {word: 'Tushar'},                 
-                {word: 'Asif'},
-                {word: 'Ibrahim'},
-                {word: 'Abdullah'},
-                {word: 'Selim'},
-                {word: 'Arnob'}
+                {word: 'রায়হান'},
+                {word: 'অভিষেক'},
+                {word: 'সামির'},
+                {word: 'তুর্জো'},
+                {word: 'তুষার'},                 
+                {word: 'আসিফ'},
+                {word: 'ইব্রাহিম'},
+                {word: 'আব্দুল্লাহ'},
+                {word: 'সেলিম'},
+                {word: 'অর্ণব'}
             ],
             //Stimulus css (style)
-            stimulusCss : {color:'#31940F','font-size':'2.3em'}
+            stimulusCss : {color:'#31940F','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
         },    
         category2 : {
-            name : 'Female', //Will appear in the data.
+            name : 'মহিলা', //Will appear in the data.
             title : {
-                media : {word : 'Female'}, //Name of the category presented in the task.
+                media : {word : 'মহিলা'}, //Name of the category presented in the task.
                 css : {color:'#31940F','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'}, //Style of the category title.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'Chandrika'},
-                {word: 'Israt'},
-                {word: 'Nafisa'},
-                {word: 'Shoily'},
-                {word: 'Sumaiya'},
-                {word: 'Anjila'},
-                {word: 'Ahona'},
-                {word: 'Meem'},
-                {word: 'Oishi'},
-                {word: 'Ramisa'}
+                {word: 'চন্দ্রিকা'},
+                {word: 'ইসরাত'},
+                {word: 'নাফিসা'},
+                {word: 'শৈলী'},
+                {word: 'সুমাইয়া'},
+                {word: 'অঞ্জিলা'},
+                {word: 'আহোনা'},
+                {word: 'মীম'},
+                {word: 'ঐশী'},
+                {word: 'রামিসা'}
             ],
             //Stimulus css (style)
-            stimulusCss : {color:'#31940F','font-size':'2.3em'}
+            stimulusCss : {color:'#31940F','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
         },
         attribute1 : {
-            name : 'Science',
+            name : 'বিজ্ঞান',
             title : {
-                media : {word : 'Science'},
+                media : {word : 'বিজ্ঞান বিভাগ'},
                 css : {color:'#0000FF','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'},
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'chemistry'},
-                {word: 'physics'},
-                {word: 'mathematics'},
-                {word: 'pharmacy'},
-                {word: 'biology'},
-                {word: 'geology'},
-                {word: 'engineering'},
-                {word: 'statistics'},
-                {word: 'psychology'},
-                {word: 'computer science'}
+                {word: 'রসায়ন'},
+                {word: 'পদার্থবিজ্ঞান'},
+                {word: 'গণিত'},
+                {word: 'ফার্মেসি'},
+                {word: 'জীববিজ্ঞান'},
+                {word: 'ভূবিজ্ঞান'},
+                {word: 'প্রকৌশল'},
+                {word: 'পরিসংখ্যান'},
+                {word: 'মনোবিজ্ঞান'},
+                {word: 'কম্পিউটার বিজ্ঞান'}
             ],
             //Stimulus css
-            stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+            stimulusCss : {color:'#0000FF','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
         },
         attribute2 : {
-            name : 'Humanities',
+            name : 'মানবিক',
             title : {
-                media : {word : 'Humanities'},
+                media : {word : 'মানবিক বিভাগ'},
                 css : {color:'#0000FF','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'},
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'history'},
-                {word: 'philosophy'},
-                {word: 'anthropology'},
-                {word: 'fine arts'},
-                {word: 'english'},
-                {word: 'literature'},
-                {word: 'sociology'},
-                {word: 'religious studies'},
-                {word: 'journalism'},
-                {word: 'theatre'}
+                {word: 'ইতিহাস'},
+                {word: 'দর্শনশাস্ত্র'},
+                {word: 'নৃবিজ্ঞান'},
+                {word: 'চারুকলা'},
+                {word: 'ইংরেজি'},
+                {word: 'সাহিত্য'},
+                {word: 'সমাজবিজ্ঞান'},
+                {word: 'ধর্মতত্ত্ব'},
+                {word: 'সাংবাদিকতা'},
+                {word: 'নাট্যকলা'}
             ],
             //Stimulus css
-            stimulusCss : {color:'#0000FF','font-size':'2.3em'}
+            stimulusCss : {color:'#0000FF','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
         },
         base_url : {//Where are your images at?
             image : global.baseURL
@@ -97,4 +96,3 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
         isTouch : global.$isTouch
     });
 });
-
