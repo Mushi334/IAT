@@ -563,7 +563,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1.4em',color:'black', lineHeight:1.2}, nolog:true, 
+				{css:{'font-size':'1.4em',color:'#000000', lineHeight:1.2}, nolog:true, 
 					location: {left:0,top:0}, size:{width:piCurrent.instWidth}}
 			],
 
@@ -1777,7 +1777,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			],
 
 			instructions: [
-				{css:{'font-size':'1.4em',color:'black', lineHeight:1.2}, nolog:true, 
+				{css:{'font-size':'1.4em',color:'#000000', lineHeight:1.2}, nolog:true, 
 					location: {left:0,top:0}, size:{width:piCurrent.instWidth}}
 			],
 
