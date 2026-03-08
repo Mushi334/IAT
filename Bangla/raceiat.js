@@ -47,7 +47,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/Mushi334/IAT@main/Bangla/iat10_ban
             stimulusCss : {color:'#31940F','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
         },
         attribute1 : {
-            name : 'বিজ্ঞান',
+            name : 'বিজ্ঞান বিভাগ',
             title : {
                 media : {word : 'বিজ্ঞান বিভাগ'},
                 css : {color:'#0000FF','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'},
@@ -69,7 +69,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/Mushi334/IAT@main/Bangla/iat10_ban
             stimulusCss : {color:'#0000FF','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
         },
         attribute2 : {
-            name : 'মানবিক',
+            name : 'মানবিক বিভাগ',
             title : {
                 media : {word : 'মানবিক বিভাগ'},
                 css : {color:'#0000FF','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'},
