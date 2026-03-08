@@ -176,7 +176,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// the name of the categories and the block's number variables:
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
-			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instAttributePractice: '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#0000ff">leftAttribute</font> বিভাগের হয়।' +
@@ -186,7 +186,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instAttributePracticeTouch: [
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -202,7 +202,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instCategoriesPractice: '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#336600">leftCategory</font> বিভাগের হয়। ' +
@@ -213,7 +213,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instCategoriesPracticeTouch: [
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -229,7 +229,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instFirstCombined : '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>E</b> কী চাপুন <font color="#336600">leftCategory</font> এবং <font color="#0000ff">leftAttribute</font> এর জন্য।<br/>' +
@@ -240,7 +240,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instFirstCombinedTouch:[
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -255,7 +255,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instSecondCombined : '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'এটি আগের অংশের মতোই।<br/>' +
@@ -265,7 +265,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instSecondCombinedTouch:[
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center"><u>অংশ blockNum এর মধ্যে nBlocks</u></p>',
 					'<br/>',
 					'<br/>',
@@ -280,7 +280,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instSwitchCategories : '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>সতর্ক থাকুন, লেবেলের অবস্থান পরিবর্তন হয়েছে!</b><br/>' +
@@ -289,7 +289,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instSwitchCategoriesTouch: [
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -604,8 +604,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			}],
 
 			touchInputStimuli: [
-				{media:{html:'<div></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{right:0}, data:{handle:'right'}},
-				{media:{html:'<div></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{left:0}, data:{handle:'left'}}
+				{media:{html:'<div style="color:#000000"></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{right:0}, data:{handle:'right'}},
+				{media:{html:'<div style="color:#000000"></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{left:0}, data:{handle:'left'}}
 			]
 		});
 
@@ -1390,7 +1390,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			// the name of the categories and the block's number variables:
 			// leftCategory, rightCategory, leftAttribute and rightAttribute, blockNum, nBlocks.
 			// Notice that this is HTML text.
-			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instAttributePractice: '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#0000ff">leftAttribute</font> বিভাগের হয়।' +
@@ -1400,7 +1400,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instAttributePracticeTouch: [
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -1416,7 +1416,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instCategoriesPractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instCategoriesPractice: '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#336600">leftCategory</font> বিভাগের হয়। ' +
@@ -1427,7 +1427,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instCategoriesPracticeTouch: [
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -1443,7 +1443,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instFirstCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instFirstCombined : '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>E</b> কী চাপুন <font color="#336600">leftCategory</font> এবং <font color="#0000ff">leftAttribute</font> এর জন্য।<br/>' +
@@ -1454,7 +1454,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instFirstCombinedTouch:[
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -1469,7 +1469,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instSecondCombined : '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'এটি আগের অংশের মতোই।<br/>' +
@@ -1479,7 +1479,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instSecondCombinedTouch:[
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center"><u>অংশ blockNum এর মধ্যে nBlocks</u></p>',
 					'<br/>',
 					'<br/>',
@@ -1494,7 +1494,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'</div>'
 			].join('\n'),
 
-			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
+			instSwitchCategories : '<div style="color:#000000"><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>অংশ blockNum এর মধ্যে nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'<b>সতর্ক থাকুন, লেবেলের অবস্থান পরিবর্তন হয়েছে!</b><br/>' +
@@ -1503,7 +1503,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
 			instSwitchCategoriesTouch: [
-				'<div>',
+				'<div style="color:#000000">',
 					'<p align="center">',
 						'<u>অংশ blockNum এর মধ্যে nBlocks</u>',
 					'</p>',
@@ -1818,8 +1818,8 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			}],
 
 			touchInputStimuli: [
-				{media:{html:'<div></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{right:0}, data:{handle:'right'}},
-				{media:{html:'<div></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{left:0}, data:{handle:'left'}}
+				{media:{html:'<div style="color:#000000"></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{right:0}, data:{handle:'right'}},
+				{media:{html:'<div style="color:#000000"></div>'}, size:{height:48,width:30},css:{background:'#00FF00', opacity:0.3, zindex:-1}, location:{left:0}, data:{handle:'left'}}
 			]
 		});
 
