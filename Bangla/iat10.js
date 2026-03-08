@@ -139,12 +139,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:1em; font-family:arial; color:#000000">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+			'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে।. ' +
 			'সঠিক কী চাপুন।<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:1.4em; font-family:arial; color:#000000">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Touch the other side to continue.<p/>',
+			'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে।. ' +
+			'অন্য পাশে ট্যাপ করুন।<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -181,7 +181,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#0000ff">leftAttribute</font> বিভাগের হয়।' +
 				'<br/>ডান হাতের আঙুল দিয়ে <b>I</b> কী চাপুন যদি আইটেমটি <font color="#0000ff">rightAttribute</font> বিভাগের হয়।<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+				'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
 				'সঠিক কী চাপুন।<br/>' +
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
@@ -208,7 +208,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#336600">leftCategory</font> বিভাগের হয়। ' +
 				'<br/>ডান হাতের আঙুল দিয়ে <b>I</b> কী চাপুন যদি আইটেমটি <font color="#336600">rightCategory</font> বিভাগের হয়।<br/>' +
 				'আইটেমগুলো একে একে দেখাবে।<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+				'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
 				'সঠিক কী চাপুন।<br/>' +
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
@@ -235,7 +235,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<b>E</b> কী চাপুন <font color="#336600">leftCategory</font> এবং <font color="#0000ff">leftAttribute</font> এর জন্য।<br/>' +
 				'<b>I</b> কী চাপুন <font color="#336600">rightCategory</font> এবং <font color="#0000ff">rightAttribute</font> এর জন্য।<br/>' +
 				'প্রতিটি আইটেম শুধুমাত্র একটি বিভাগের।<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+				'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
 				'সঠিক কী চাপুন।<br/>' + 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
@@ -1353,12 +1353,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			remindError : true,
 
 			remindErrorText : '<p align="center" style="font-size:1em; font-family:arial; color:#000000">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+			'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
 			'সঠিক কী চাপুন।<p/>',
 
 			remindErrorTextTouch : '<p align="center" style="font-size:1.4em; font-family:arial; color:#000000">' +
-			'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
-			'Touch the other side to continue.<p/>',
+			'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
+			'অন্য পাশে ট্যাপ করুন।<p/>',
 
 			errorCorrection : true, //Should participants correct error responses?
 			errorFBDuration : 500, //Duration of error feedback display (relevant only when errorCorrection is false)
@@ -1395,7 +1395,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#0000ff">leftAttribute</font> বিভাগের হয়।' +
 				'<br/>ডান হাতের আঙুল দিয়ে <b>I</b> কী চাপুন যদি আইটেমটি <font color="#0000ff">rightAttribute</font> বিভাগের হয়।<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+				'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
 				'সঠিক কী চাপুন।<br/>' +
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
@@ -1422,7 +1422,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'বাম হাতের আঙুল দিয়ে <b>E</b> কী চাপুন যদি আইটেমটি <font color="#336600">leftCategory</font> বিভাগের হয়। ' +
 				'<br/>ডান হাতের আঙুল দিয়ে <b>I</b> কী চাপুন যদি আইটেমটি <font color="#336600">rightCategory</font> বিভাগের হয়।<br/>' +
 				'আইটেমগুলো একে একে দেখাবে।<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+				'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
 				'সঠিক কী চাপুন।<br/>' +
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>'+
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
@@ -1449,7 +1449,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<b>E</b> কী চাপুন <font color="#336600">leftCategory</font> এবং <font color="#0000ff">leftAttribute</font> এর জন্য।<br/>' +
 				'<b>I</b> কী চাপুন <font color="#336600">rightCategory</font> এবং <font color="#0000ff">rightAttribute</font> এর জন্য।<br/>' +
 				'প্রতিটি আইটেম শুধুমাত্র একটি বিভাগের।<br/><br/>' +
-				'If you make a mistake, a red <font color="#ff0000"><b>X</b></font> will appear. ' +
+				'ভুল হলে একটি লাল <font color="#ff0000"><b>X</b></font> দেখাবে। ' +
 				'সঠিক কী চাপুন।<br/>' + 
 				'<u>যত দ্রুত পারেন</u> সঠিকভাবে উত্তর দিন।<br/><br/></p>' +
 				'<p align="center">শুরু করতে <b>স্পেসবার</b> চাপুন।</font></p></div>',
