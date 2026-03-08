@@ -1,0 +1,91 @@
+define(['pipAPI','https://cdn.jsdelivr.net/gh/Mushi334/IAT@main/Bangla/iat10_bangla.js'], function(APIConstructor, iatExtension){
+    let API = new APIConstructor();
+    let global = API.getGlobal();
+
+    return iatExtension({
+        category1 : {
+            name : 'পুরুষ', //Will appear in the data.
+            title : {
+                media : {word : 'পুরুষ'}, //Name of the category presented in the task.
+                css : {color:'#31940F','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'}, //Style of the category title.
+                height : 4 //Used to position the "Or" in the combined block.
+            }, 
+            stimulusMedia : [ //Stimuli content as PIP's media objects
+                {word: 'রায়হান'},
+                {word: 'অভিষেক'},
+                {word: 'সামির'},
+                {word: 'তুর্জো'},
+                {word: 'তুষার'},                 
+                {word: 'আসিফ'},
+                {word: 'ইব্রাহিম'},
+                {word: 'আব্দুল্লাহ'}
+            ],
+            //Stimulus css (style)
+            stimulusCss : {color:'#31940F','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
+        },    
+        category2 : {
+            name : 'মহিলা', //Will appear in the data.
+            title : {
+                media : {word : 'মহিলা'}, //Name of the category presented in the task.
+                css : {color:'#31940F','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'}, //Style of the category title.
+                height : 4 //Used to position the "Or" in the combined block.
+            }, 
+            stimulusMedia : [ //Stimuli content as PIP's media objects
+                {word: 'চন্দ্রিকা'},
+                {word: 'ইসরাত'},
+                {word: 'নাফিসা'},
+                {word: 'শৈলী'},
+                {word: 'সুমাইয়া'},
+                {word: 'অঞ্জিলা'},
+                {word: 'আহোনা'},
+                {word: 'মীম'}
+            ],
+            //Stimulus css (style)
+            stimulusCss : {color:'#31940F','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
+        },
+        attribute1 : {
+            name : 'বিজ্ঞান',
+            title : {
+                media : {word : 'বিজ্ঞান'},
+                css : {color:'#0000FF','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'},
+                height : 4 //Used to position the "Or" in the combined block.
+            },
+            stimulusMedia : [ //Stimuli content as PIP's media objects
+                {word: 'রসায়ন'},
+                {word: 'পদার্থবিজ্ঞান'},
+                {word: 'গণিত'},
+                {word: 'ফার্মেসি'},
+                {word: 'জীববিজ্ঞান'},
+                {word: 'ভূবিজ্ঞান'},
+                {word: 'প্রকৌশল'},
+                {word: 'চিকিৎসা'}
+            ],
+            //Stimulus css
+            stimulusCss : {color:'#0000FF','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
+        },
+        attribute2 : {
+            name : 'মানবিক',
+            title : {
+                media : {word : 'মানবিক'},
+                css : {color:'#0000FF','font-size':'2em', 'font-family':'"Noto Sans Bengali", sans-serif'},
+                height : 4 //Used to position the "Or" in the combined block.
+            },
+            stimulusMedia : [ //Stimuli content as PIP's media objects
+                {word: 'ইতিহাস'},
+                {word: 'দর্শনশাস্ত্র'},
+                {word: 'নৃবিজ্ঞান'},
+                {word: 'চারুকলা'},
+                {word: 'ইংরেজি'},
+                {word: 'সাহিত্য'},
+                {word: 'সমাজবিজ্ঞান'},
+                {word: 'ধর্মতত্ত্ব'}
+            ],
+            //Stimulus css
+            stimulusCss : {color:'#0000FF','font-size':'2.3em', 'font-family':'"Noto Sans Bengali", sans-serif'}
+        },
+        base_url : {//Where are your images at?
+            image : global.baseURL
+        },
+        isTouch : global.$isTouch
+    });
+});

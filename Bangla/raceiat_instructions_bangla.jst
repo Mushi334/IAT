@@ -1,0 +1,56 @@
+<%
+    var respInst = "আপনি 'E' এবং 'I' কী ব্যবহার করে";
+    if (global.$isTouch)  respInst = "আপনি";
+%>
+
+<div class="panel panel-info" style="margin-top:1em">
+		<div class="panel-heading">
+			<h1 class="panel-title" style="font-size:2em">
+				IAT নির্দেশনা
+			</h1>
+		</div>
+</div>
+
+<div class="panel-body">
+	<p class="lead">এরপর, <%=respInst%> যত দ্রুত সম্ভব আইটেমগুলিকে গ্রুপে ভাগ করবেন।
+	এই চারটি গ্রুপ এবং প্রতিটিতে যেসব আইটেম রয়েছে:</p>
+
+<table class="table table-bordered">
+    <tr class="active">
+        <th>বিভাগ</th>
+        <th>আইটেম</th>
+    </tr>
+    <tr>
+        <th>বিজ্ঞান বিষয়</th>
+        <td>
+            রসায়ন, পদার্থবিজ্ঞান, গণিত, ফার্মেসি, জীববিজ্ঞান, ভূবিজ্ঞান, প্রকৌশল, চিকিৎসা
+        </td>
+    </tr>
+    <tr>
+        <th>মানবিক বিষয়</th>
+        <td>
+            ইতিহাস, দর্শনশাস্ত্র, নৃবিজ্ঞান, চারুকলা, ইংরেজি, সাহিত্য, সমাজবিজ্ঞান, ধর্মতত্ত্ব
+        </td>
+    </tr>
+    <tr>
+        <th>পুরুষ</th>
+        <td>
+            রায়হান, অভিষেক, সামির, তুর্জো, তুষার, আসিফ
+        </td>
+    </tr>
+    <tr>
+        <th>মহিলা</th>
+        <td>
+            চন্দ্রিকা, ইসরাত, নাফিসা, শৈলী, সুমাইয়া, অঞ্জিলা
+        </td>
+    </tr>
+</table>
+
+	<p class="lead">সাতটি অংশ রয়েছে। প্রতিটি অংশের নির্দেশনা আলাদা। মনোযোগ দিন!<p>
+
+	<div class="text-center proceed" style="margin: 30px auto 10px;">
+		<button pi-message-done type="button" class="btn btn-primary">
+			শুরু করুন
+		</button>
+	</div>
+</div>
