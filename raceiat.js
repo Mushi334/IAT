@@ -55,16 +55,16 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'chemistry'},
-                {word: 'physics'},
-                {word: 'mathematics'},
-                {word: 'pharmacy'},
-                {word: 'biology'},
-                {word: 'geology'},
-                {word: 'engineering'},
-                {word: 'statistics'},
-                {word: 'psychology'},
-                {word: 'computer science'}
+                {word: 'Chemistry'},
+                {word: 'Physics'},
+                {word: 'Mathematics'},
+                {word: 'Pharmacy'},
+                {word: 'Biology'},
+                {word: 'Geology'},
+                {word: 'Engineering'},
+                {word: 'Statistics'},
+                {word: 'Psychology'},
+                {word: 'Computer Science'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -77,16 +77,16 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             },
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'history'},
-                {word: 'philosophy'},
-                {word: 'anthropology'},
-                {word: 'fine arts'},
-                {word: 'english'},
-                {word: 'literature'},
-                {word: 'sociology'},
-                {word: 'religious studies'},
-                {word: 'journalism'},
-                {word: 'theatre'}
+                {word: 'History'},
+                {word: 'Philosophy'},
+                {word: 'Anthropology'},
+                {word: 'Fine Arts'},
+                {word: 'English'},
+                {word: 'Literature'},
+                {word: 'Sociology'},
+                {word: 'Religious Studies'},
+                {word: 'Journalism'},
+                {word: 'Theatre'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
