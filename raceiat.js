@@ -11,16 +11,12 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 height : 4 //Used to position the "Or" in the combined block.
             }, 
             stimulusMedia : [ //Stimuli content as PIP's media objects
-                {word: 'Raihan'},
                 {word: 'Ovishek'},
-                {word: 'Samir'},
                 {word: 'Turjo'},
                 {word: 'Tushar'},                 
                 {word: 'Asif'},
                 {word: 'Ibrahim'},
-                {word: 'Abdullah'},
-                {word: 'Selim'},
-                {word: 'Arnob'}
+                {word: 'Selim'}
             ],
             //Stimulus css (style)
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
@@ -36,13 +32,9 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {word: 'Chandrika'},
                 {word: 'Israt'},
                 {word: 'Nafisa'},
-                {word: 'Shoily'},
                 {word: 'Sumaiya'},
-                {word: 'Anjila'},
                 {word: 'Ahona'},
-                {word: 'Meem'},
-                {word: 'Oishi'},
-                {word: 'Ramisa'}
+                {word: 'Meem'}
             ],
             //Stimulus css (style)
             stimulusCss : {color:'#31940F','font-size':'2.3em'}
@@ -60,11 +52,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {word: 'Mathematics'},
                 {word: 'Pharmacy'},
                 {word: 'Biology'},
-                {word: 'Geology'},
-                {word: 'Engineering'},
-                {word: 'Statistics'},
-                {word: 'Psychology'},
-                {word: 'Computer Science'}
+                {word: 'Geology'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
@@ -82,11 +70,7 @@ define(['pipAPI','https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/iat10.
                 {word: 'Anthropology'},
                 {word: 'Fine Arts'},
                 {word: 'English'},
-                {word: 'Literature'},
-                {word: 'Sociology'},
-                {word: 'Religious Studies'},
-                {word: 'Journalism'},
-                {word: 'Theatre'}
+                {word: 'Journalism'}
             ],
             //Stimulus css
             stimulusCss : {color:'#0000FF','font-size':'2.3em'}
